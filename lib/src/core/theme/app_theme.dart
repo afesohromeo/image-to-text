@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kit/src/core/theme/color_schemes.dart';
+import 'package:flutter_bloc_kit/src/core/theme/color_schemes.dart';
 
 class AppTheme {
   static ThemeData _buildTheme({required Brightness brightness}) {
-    final ColorScheme colors = brightness == Brightness.light ? lightColorScheme : darkColorScheme;
+    final ColorScheme colors =
+        brightness == Brightness.light ? lightColorScheme : darkColorScheme;
 
     return ThemeData.from(
       useMaterial3: true,

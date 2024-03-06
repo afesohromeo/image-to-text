@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter_kit/src/features/home_screen/ui/home_screen.dart';
+import 'package:flutter_bloc_kit/src/features/home_screen/ui/home_screen.dart';
 
 part 'app_router.gr.dart';
 
@@ -11,5 +11,4 @@ class AppRouter extends _$AppRouter {
   List<AutoRoute> routes = [
     AutoRoute(page: HomeRoute.page, initial: true),
   ];
-
 }

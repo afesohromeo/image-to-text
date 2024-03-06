@@ -1,12 +1,12 @@
-name: flutter_kit
+name: flutter_bloc_kit
 description: A boilerplate for Flutter Projects using BLoC Architecture
 
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0'
+  sdk: ">=3.0.0"
 
 dependencies:
   flutter:
@@ -19,11 +19,8 @@ dependencies:
   freezed_annotation: ^2.4.1
   json_annotation: ^4.8.1
   equatable: ^2.0.5
-
   intl: ^0.18.1
-  intl_utils: ^2.8.7
   get_it: ^7.6.7
-
   dio: ^5.4.0
   auto_route: ^7.8.4
 

@@ -5,28 +5,38 @@ This kit is a boilerplate for Flutter projects. It comes with a set of preconfig
 
 ### 1. Clone the repository
 ```bash
-git clone git@github.com:stevenosse/flutter_kit.git
+git clone https://github.com/afesohromeo/flutter_bloc_kit.git
 ```
 
 ### 2. Customize the project
-  <!-- warning icon -->
-<img src="https://img.icons8.com/color/48/000000/warning-shield.png" width="20" height="20" /> **Warning**: This command has not been tested on Windows. If you are using Windows, please open an issue if you encounter any problems.
+
+Install the Rename CLI Tool by executing the following command:
 
 ````bash
-dart run bin/install.dart --package-name=your_package_name --name=app_name
+flutter pub global activate rename
 ````
 
-This command will:
-- Rename the project in the `pubspec.yaml` file and all files using the package:flutter_kit import
-- Change the package name and bundle identifier for both android and ios projects
-- Rename the android native app code directory
+Run the following commands:
+
+````bash
+_rename setAppName --targets ios,android --value "YourAppName"
+````
+- This will set the AppName for the iOS and Android platforms to "YourAppName".
+
+````bash
+rename setBundleId --targets ios,android --value "com.example.bundleId"
+````
+- This will set the BundleId for the Android and Ios platform to "com.example.bundleId".
+
+If you are building for other platforms other than android and ios make sure to specify in "--targets" parameter.
+For more info on Rename Cli tool checkout [https://pub.dev/packages/rename]
 
 ## Features
 This kit comes with a set of preconfigured features and utilities:
 
 - I18n
-- Navigation (using auto_route)
-- State management (using BLoC & freezed)
+- Navigation (using go_router)
+- State management (using BLoc)
 - Extensions (on context, iterable)
 - Utility widgets
 - Default Theming using Material 3
