@@ -53,9 +53,9 @@ flutter pub run intl_utils:generate
 Alternatively, you can install the [flutter_intl](https://marketplace.visualstudio.com/items?itemName=localizely.flutter-intl) package in VSCode to automatically generate the code when you save the file.
 
 ## 🛣️ Navigation
-This kit uses [auto_route](https://pub.dev/packages/auto_route) for navigation. To add a new route, add a new file to the `src/core/routing/app_router.dart` file. 
+This kit uses [go_router](https://pub.dev/packages/go_router) for navigation. To add a new route, add a new route to the file `src/core/routing/route_manager.dart`. 
 
-See the [auto_route documentation](https://pub.dev/packages/auto_route) for more information.
+See the [go_router documentation](https://pub.dev/packages/go_router) for more information.
 
 ## 🧱 State Management
 This kit uses [BLoC](https://pub.dev/packages/flutter_bloc) for state management. 
