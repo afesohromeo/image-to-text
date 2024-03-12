@@ -39,15 +39,15 @@ This kit comes with a set of preconfigured features and utilities:
 - State management (using BLoc)
 - Extensions (on context, iterable)
 - Utility widgets
-- Default Theming using Material 3
+- Default Theming using Material 3 and google font
 
 ## 🗺️ I18n
-This kit uses [intl_utils](https://pub.dev/packages/intl_utils) for internationalization. To add a new language, add a new file to the `src/core/i18n/l10n` folder. The file name should be the language code prefixed with intl_ (e.g. `intl_fr.arb`).
+This kit uses packages flutter_localizations and [intl](https://pub.dev/packages/intl) for internationalization. To add a new language, add a new file to the `src/core/l10n` folder. The file name should be the language code prefixed with app_ (e.g. `intl_fr.arb`).
 
 To generate the code for the new language, run the following command:
 
 ```bash
-flutter pub run intl_utils:generate
+flutter pub get
 ```
 
 Alternatively, you can install the [flutter_intl](https://marketplace.visualstudio.com/items?itemName=localizely.flutter-intl) package in VSCode to automatically generate the code when you save the file.

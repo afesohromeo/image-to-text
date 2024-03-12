@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc_kit/src/core/core.dart';
 import 'package:flutter_bloc_kit/src/core/theme/dimens.dart';
 import 'package:flutter_bloc_kit/src/features/home/logic/counter_cubit.dart';
 import 'package:flutter_bloc_kit/src/shared/components/gap.dart';
@@ -18,7 +19,7 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'count',
+                AppLocalizations.of(context)!.count,
                 style: context.textTheme.bodyLarge,
               ),
               const Gap.vertical(height: Dimens.spacing),
