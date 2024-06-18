@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'core.dart';
-import 'theme/app_theme.dart';
+// import 'theme/app_theme.dart';
 
 class ApplicationView extends StatelessWidget {
   const ApplicationView({super.key});

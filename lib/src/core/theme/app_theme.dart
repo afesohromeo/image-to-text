@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_bloc_kit/src/core/theme/color_schemes.dart';
-
 import 'theme.dart';
 
 class AppTheme {
@@ -99,9 +97,9 @@ class AppTheme {
       brightness: Brightness.light,
       colorScheme: lightColorScheme,
       checkboxTheme: CheckboxThemeData(
-        checkColor: MaterialStateProperty.all(AppColors.white1),
+        checkColor: WidgetStateProperty.all(AppColors.white1),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        fillColor: MaterialStateProperty.all(AppColors.primary),
+        fillColor: WidgetStateProperty.all(AppColors.primary),
       ),
       appBarTheme: const AppBarTheme(
         surfaceTintColor: Colors.transparent,
