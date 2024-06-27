@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_kit/src/core/theme/theme.dart';
+import 'package:image_to_text/src/core/theme/theme.dart';
 
 const lightColorScheme = ColorScheme(
   brightness: Brightness.light,

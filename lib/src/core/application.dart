@@ -1,6 +1,7 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_kit/src/features/features.dart';
+import 'package:image_to_text/src/features/features.dart';
 import 'package:provider/provider.dart';
 
 import 'core.dart';
@@ -32,7 +33,11 @@ class Application extends StatelessWidget {
         //         )..add(const AppointmentInitialized())),
 
         BlocProvider(
-          create: (_) => CounterCubit(),
+          create: (_) => HomeBloc()..add(HomeEvent.initilize()),
+          child: this,
+        ),
+        BlocProvider(
+          create: (_) => AuthenticationCubit(),
           child: this,
         ),
       ],

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 
 import 'src/core/core.dart';
@@ -12,6 +13,7 @@ void main() {
       WidgetsFlutterBinding.ensureInitialized();
 
       await appInitializer.preAppRun();
+      
 
       runApp(const Application());
 

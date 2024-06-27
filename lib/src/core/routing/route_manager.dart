@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_kit/src/features/features.dart';
+import 'package:image_to_text/src/features/features.dart';
 import 'package:go_router/go_router.dart';
 
 import 'routing.dart';
@@ -13,7 +13,7 @@ class RouteManager {
   late final GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
     debugLogDiagnostics: true,
-    initialLocation: '/home',
+    initialLocation: authenticationPage,
     routes: [
       GoRoute(
         name: homeRouteName,
@@ -22,6 +22,18 @@ class RouteManager {
           return NoTransitionPage<void>(
             key: state.pageKey,
             child: const HomePage(),
+          );
+          //  slideTransition(
+          //     state, const HomePage(), const Offset(0.0, 1.0));
+        },
+      ),
+      GoRoute(
+        name: authenticateRouteName,
+        path: authenticationPage,
+        pageBuilder: (context, state) {
+          return NoTransitionPage<void>(
+            key: state.pageKey,
+            child: const AuthenticationPage(),
           );
           //  slideTransition(
           //     state, const HomePage(), const Offset(0.0, 1.0));

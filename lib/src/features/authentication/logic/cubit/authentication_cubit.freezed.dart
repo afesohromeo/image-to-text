@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'counter_cubit.dart';
+part of 'authentication_cubit.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -12,24 +12,24 @@ part of 'counter_cubit.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
-mixin _$CounterState {
-  int get value => throw _privateConstructorUsedError;
+mixin _$AuthenticationState {
+  bool get isAuthenticated => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(int value) initial,
+    required TResult Function(bool isAuthenticated) initial,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(int value)? initial,
+    TResult? Function(bool isAuthenticated)? initial,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(int value)? initial,
+    TResult Function(bool isAuthenticated)? initial,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -51,23 +51,23 @@ mixin _$CounterState {
       throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $CounterStateCopyWith<CounterState> get copyWith =>
+  $AuthenticationStateCopyWith<AuthenticationState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CounterStateCopyWith<$Res> {
-  factory $CounterStateCopyWith(
-          CounterState value, $Res Function(CounterState) then) =
-      _$CounterStateCopyWithImpl<$Res, CounterState>;
+abstract class $AuthenticationStateCopyWith<$Res> {
+  factory $AuthenticationStateCopyWith(
+          AuthenticationState value, $Res Function(AuthenticationState) then) =
+      _$AuthenticationStateCopyWithImpl<$Res, AuthenticationState>;
   @useResult
-  $Res call({int value});
+  $Res call({bool isAuthenticated});
 }
 
 /// @nodoc
-class _$CounterStateCopyWithImpl<$Res, $Val extends CounterState>
-    implements $CounterStateCopyWith<$Res> {
-  _$CounterStateCopyWithImpl(this._value, this._then);
+class _$AuthenticationStateCopyWithImpl<$Res, $Val extends AuthenticationState>
+    implements $AuthenticationStateCopyWith<$Res> {
+  _$AuthenticationStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -77,31 +77,31 @@ class _$CounterStateCopyWithImpl<$Res, $Val extends CounterState>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = null,
+    Object? isAuthenticated = null,
   }) {
     return _then(_value.copyWith(
-      value: null == value
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as int,
+      isAuthenticated: null == isAuthenticated
+          ? _value.isAuthenticated
+          : isAuthenticated // ignore: cast_nullable_to_non_nullable
+              as bool,
     ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$InitialImplCopyWith<$Res>
-    implements $CounterStateCopyWith<$Res> {
+    implements $AuthenticationStateCopyWith<$Res> {
   factory _$$InitialImplCopyWith(
           _$InitialImpl value, $Res Function(_$InitialImpl) then) =
       __$$InitialImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int value});
+  $Res call({bool isAuthenticated});
 }
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$CounterStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$AuthenticationStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -110,13 +110,13 @@ class __$$InitialImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = null,
+    Object? isAuthenticated = null,
   }) {
     return _then(_$InitialImpl(
-      value: null == value
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as int,
+      null == isAuthenticated
+          ? _value.isAuthenticated
+          : isAuthenticated // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -124,26 +124,27 @@ class __$$InitialImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$InitialImpl implements _Initial {
-  const _$InitialImpl({required this.value});
+  const _$InitialImpl(this.isAuthenticated);
 
   @override
-  final int value;
+  final bool isAuthenticated;
 
   @override
   String toString() {
-    return 'CounterState.initial(value: $value)';
+    return 'AuthenticationState.initial(isAuthenticated: $isAuthenticated)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InitialImpl &&
-            (identical(other.value, value) || other.value == value));
+            (identical(other.isAuthenticated, isAuthenticated) ||
+                other.isAuthenticated == isAuthenticated));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, value);
+  int get hashCode => Object.hash(runtimeType, isAuthenticated);
 
   @JsonKey(ignore: true)
   @override
@@ -154,27 +155,27 @@ class _$InitialImpl implements _Initial {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(int value) initial,
+    required TResult Function(bool isAuthenticated) initial,
   }) {
-    return initial(value);
+    return initial(isAuthenticated);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(int value)? initial,
+    TResult? Function(bool isAuthenticated)? initial,
   }) {
-    return initial?.call(value);
+    return initial?.call(isAuthenticated);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(int value)? initial,
+    TResult Function(bool isAuthenticated)? initial,
     required TResult orElse(),
   }) {
     if (initial != null) {
-      return initial(value);
+      return initial(isAuthenticated);
     }
     return orElse();
   }
@@ -208,11 +209,11 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements CounterState {
-  const factory _Initial({required final int value}) = _$InitialImpl;
+abstract class _Initial implements AuthenticationState {
+  const factory _Initial(final bool isAuthenticated) = _$InitialImpl;
 
   @override
-  int get value;
+  bool get isAuthenticated;
   @override
   @JsonKey(ignore: true)
   _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>

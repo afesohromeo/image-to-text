@@ -1,66 +1,66 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'theme.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-  static const TextTheme lightTextTheme = TextTheme(
-      //   titleLarge: GoogleFonts.quicksand(
-      //       fontSize: 25.0,
-      //       color: AppColors.white1,
-      //       fontWeight: FontWeight.bold),
-      //   titleMedium: GoogleFonts.quicksand(
-      //       fontSize: 16.0,
-      //       color: AppColors.black1,
-      //       fontWeight: FontWeight.w700),
-      //   titleSmall: GoogleFonts.quicksand(
-      //     fontSize: 14.0,
-      //     color: AppColors.green3,
-      //   ),
-      //   bodyLarge: GoogleFonts.quicksand(
-      //     fontSize: 16.0,
-      //     color: AppColors.black1,
-      //   ),
-      //   bodyMedium: GoogleFonts.quicksand(
-      //       fontSize: 14.0,
-      //       color: AppColors.black1,
-      //       fontWeight: FontWeight.w600),
-      //   bodySmall: GoogleFonts.quicksand(
-      //     fontSize: 12.0,
-      //     color: AppColors.black1,
-      //   ),
-      //   displayLarge: GoogleFonts.quicksand(
-      //     fontSize: 25.0,
-      //     fontWeight: FontWeight.bold,
-      //     color: AppColors.primary,
-      //   ),
-      //   displayMedium: GoogleFonts.quicksand(
-      //     fontSize: 16.0,
-      //     fontWeight: FontWeight.w700,
-      //     color: AppColors.black1,
-      //   ),
-      //   displaySmall: GoogleFonts.quicksand(
-      //     fontSize: 16.0,
-      //     fontWeight: FontWeight.w500,
-      //     color: AppColors.secondary,
-      //   ),
-      //   headlineMedium: GoogleFonts.quicksand(
-      //     fontSize: 18.0,
-      //     fontWeight: FontWeight.w500,
-      //     color: AppColors.grey1,
-      //   ),
-      //   headlineSmall: GoogleFonts.quicksand(
-      //     fontSize: 14.0,
-      //     fontWeight: FontWeight.w700,
-      //     color: AppColors.label,
-      //   ),
-      //   headlineLarge: GoogleFonts.quicksand(
-      //     fontSize: 16.0,
-      //     fontWeight: FontWeight.w700,
-      //     // color: AppColors.black1,
-      //   ),
-      // );
-
-      );
+  static TextTheme lightTextTheme = TextTheme(
+    //   titleLarge: GoogleFonts.quicksand(
+    //       fontSize: 25.0,
+    //       color: AppColors.white1,
+    //       fontWeight: FontWeight.bold),
+    //   titleMedium: GoogleFonts.quicksand(
+    //       fontSize: 16.0,
+    //       color: AppColors.black1,
+    //       fontWeight: FontWeight.w700),
+    //   titleSmall: GoogleFonts.quicksand(
+    //     fontSize: 14.0,
+    //     color: AppColors.green3,
+    //   ),
+    bodyLarge: GoogleFonts.quicksand(
+      fontSize: 16.0,
+      color: AppColors.black1,
+    ),
+    //   bodyMedium: GoogleFonts.quicksand(
+    //       fontSize: 14.0,
+    //       color: AppColors.black1,
+    //       fontWeight: FontWeight.w600),
+    //   bodySmall: GoogleFonts.quicksand(
+    //     fontSize: 12.0,
+    //     color: AppColors.black1,
+    //   ),
+    //   displayLarge: GoogleFonts.quicksand(
+    //     fontSize: 25.0,
+    //     fontWeight: FontWeight.bold,
+    //     color: AppColors.primary,
+    //   ),
+    displayMedium: GoogleFonts.quicksand(
+      fontSize: 16.0,
+      fontWeight: FontWeight.bold,
+      color: AppColors.black1,
+    ),
+    //   displaySmall: GoogleFonts.quicksand(
+    //     fontSize: 16.0,
+    //     fontWeight: FontWeight.w500,
+    //     color: AppColors.secondary,
+    //   ),
+    //   headlineMedium: GoogleFonts.quicksand(
+    //     fontSize: 18.0,
+    //     fontWeight: FontWeight.w500,
+    //     color: AppColors.grey1,
+    //   ),
+    //   headlineSmall: GoogleFonts.quicksand(
+    //     fontSize: 14.0,
+    //     fontWeight: FontWeight.w700,
+    //     color: AppColors.label,
+    //   ),
+    //   headlineLarge: GoogleFonts.quicksand(
+    //     fontSize: 16.0,
+    //     fontWeight: FontWeight.w700,
+    //     // color: AppColors.black1,
+    //   ),
+    // );
+  );
   static const TextTheme darkTextTheme = TextTheme(
       // bodyLarge: GoogleFonts.quicksand(
       //   fontSize: 14.0,

@@ -9,7 +9,7 @@ class ApplicationView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'MyApp',
+      title: 'ImageToText',
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       routerConfig: Provider.of<RouteManager>(context, listen: false).router,
